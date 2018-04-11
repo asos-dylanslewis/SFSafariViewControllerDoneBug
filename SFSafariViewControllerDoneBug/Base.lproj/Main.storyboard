@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SFSafariViewControllerDoneBug" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1A-dn-6SE">
+                                <rect key="frame" x="127" y="318" width="121" height="30"/>
+                                <state key="normal" title="Open Form Sheet"/>
+                                <connections>
+                                    <action selector="didTapOpenFormSheetViewController" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGf-I9-SEU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t1A-dn-6SE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9dT-W4-oMh"/>
+                            <constraint firstItem="t1A-dn-6SE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="enD-5Z-awl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Form Sheet View Controller-->
+        <scene sceneID="tF5-5b-Hdp">
+            <objects>
+                <viewController storyboardIdentifier="FormSheetViewController" id="NTM-M0-NW7" customClass="FormSheetViewController" customModule="SFSafariViewControllerDoneBug" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8mG-RZ-rUx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSn-JV-Irn">
+                                <rect key="frame" x="88" y="318" width="199" height="30"/>
+                                <state key="normal" title="Open SFSafariViewController"/>
+                                <connections>
+                                    <action selector="didTapOpenSFSafariViewControllerButton" destination="NTM-M0-NW7" eventType="touchUpInside" id="bZN-S7-KQS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oSn-JV-Irn" firstAttribute="centerX" secondItem="8mG-RZ-rUx" secondAttribute="centerX" id="DC4-Tc-Xqc"/>
+                            <constraint firstItem="oSn-JV-Irn" firstAttribute="centerY" secondItem="8mG-RZ-rUx" secondAttribute="centerY" id="Uhg-i3-zFT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9gK-Hh-ZvZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Na-hZ-Bja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465" y="34"/>
+        </scene>
+    </scenes>
+</document>
